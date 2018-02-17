@@ -23,6 +23,10 @@ module.exports = new WebpackConfig().merge({
         test: /\.scss$/,
         loader: 'style!css?sourceMap!sass?sourceMap&sourceComments'
     }, {
+      test: /\.css$/,
+      loader: 'style!css-loader?importLoaders=1'
+      // loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+    }, {
         test: /\.(eot|woff|woff2|ttf|png|svg|jpg)$/,
         loader: 'url-loader?limit=300'
     }, {
@@ -48,5 +52,9 @@ module.exports = new WebpackConfig().merge({
       template: 'index.ejs',
       inject: 'body'
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['', '.js', '.css', '.scss'],
+    modulesDirectories: ['node_modules']
+  }
 })

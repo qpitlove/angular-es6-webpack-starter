@@ -18,7 +18,10 @@
   },
   "dependencies": {
     "angular": "^1.6",
-    "angular-ui-router": "1.0.3"
+    "angular-resource": "^1.6.9",
+    "angular-ui-router": "1.0.3",
+    "todomvc-app-css": "^1.0.1",
+    "todomvc-common": "^1.0.0"
   },
   "devDependencies": {
     "babel-plugin-angularjs-annotate": "^0.8.0",
