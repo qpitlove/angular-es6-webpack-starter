@@ -54,7 +54,6 @@ module.exports = new WebpackConfig().merge({
     })
   ],
   resolve: {
-    extensions: ['', '.js', '.css', '.scss'],
-    modulesDirectories: ['node_modules']
+    extensions: ['', '.js', '.css', '.scss']
   }
 })
