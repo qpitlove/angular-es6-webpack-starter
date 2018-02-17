@@ -41,7 +41,7 @@ function TodoCtrl($scope, $state, $filter, todoService) {
   }, true);
 
 
-  $ctrl.addTodo = function () {
+  $scope.addTodo = function () {
     var newTodo = {
       title: $scope.newTodo.trim(),
       completed: false

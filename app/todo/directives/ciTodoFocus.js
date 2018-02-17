@@ -1,9 +1,9 @@
 /* @ngInject */
-function todoFocus($timeout) {
+function ciTodoFocus($timeout) {
   'use strict';
 
   return function (scope, elem, attrs) {
-    scope.$watch(attrs.todoFocus, function (newVal) {
+    scope.$watch(attrs.ciTodoFocus, function (newVal) {
       if (newVal) {
         $timeout(function () {
           elem[0].focus();
@@ -13,4 +13,4 @@ function todoFocus($timeout) {
   };
 }
 
-export default todoFocus;
+export default ciTodoFocus;
