@@ -5,7 +5,7 @@ describe('Example Page', function() {
   });
 
   it('should land on Example Screen', function () {
-    expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + 'example');
+    expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + 'todomvc');
   });
 
 });
